@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  width: 1500px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.message{
+  font-size: 1.3rem;
+}
+.card {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
