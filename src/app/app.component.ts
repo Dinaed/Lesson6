@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Airline } from './models/Airline'
+import { Airline } from './models/airline'
 import { Passenger } from './models/passenger';
 import { AirlinesService } from './services/airlines.service';
+import { IndikatorService } from './services/indikator.service';
 import { PassengersService } from './services/passengers.service';
 
 @Component({
@@ -17,7 +18,7 @@ export class AppComponent implements OnInit{
   airlineId:number = 0;
   passengersId:string = '';
 
-  constructor(private airlineService: AirlinesService, private passengerService: PassengersService){}
+  constructor(private airlineService: AirlinesService, private passengerService: PassengersService, public indicator:IndikatorService){}
 
   ngOnInit(): void {
     // this.ailineService.getAirlaines()

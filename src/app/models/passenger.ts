@@ -1,4 +1,4 @@
-import { Airline } from "./Airline"
+import { Airline } from "./airline"
 
 export interface Passenger { 	
 _id:string,
